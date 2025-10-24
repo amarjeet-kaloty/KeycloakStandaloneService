@@ -1,0 +1,6 @@
+# Visual Studio related files/folders
+.vs/
+
+# Binaries/Build output (if any are created later)
+[Bb]in/
+[Oo]bj/

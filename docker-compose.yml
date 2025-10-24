@@ -1,0 +1,15 @@
+# -----------------------------------------------------------------
+#  KEYCLOAK SERVICE
+# -----------------------------------------------------------------
+services:
+  postgres:
+    image: postgres:16-alpine3.19
+  keycloak:
+    image: quay.io/keycloak/keycloak:26.2.2
+    networks:
+        - dapr-network
+
+networks:
+  dapr-network:
+    external: true
+    name: dapr-pubsub-network
